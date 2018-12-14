@@ -38,15 +38,6 @@ module.exports = merge(baseWebpackConfig, {
 			// 解析node_modules里的css文件
 			{
 				test: /\.css$/,
-<<<<<<< HEAD
-				include: paths.apppNodeModules,
-				exclude: paths.appSrc,
-				use: ['style-loader', 'css-loader']
-			},
-			// 解析src项目里的less、scss文件
-			{
-				test: /\.(less|scss)$/,
-=======
 				exclude: paths.apppNodeModules,
 				include: paths.appSrc,
 				use: [
@@ -57,7 +48,6 @@ module.exports = merge(baseWebpackConfig, {
 			// 解析src项目里的less、scss文件
 			{
 				test: /\.less$/,
->>>>>>> dev
 				exclude: paths.apppNodeModules,
 				include: paths.appSrc,
 				use: [
@@ -74,16 +64,11 @@ module.exports = merge(baseWebpackConfig, {
 						}
 					},
 					{
-<<<<<<< HEAD
-						loader: 'postcss-loader',
-					}
-=======
 						loader: 'less-loader',
 						options: {
 							sourceMap: true,
 						}
 					},
->>>>>>> dev
 				]
 			},
 		]

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { hot } from 'react-hot-loader';
 
 import Card from './Card';
-import IntroVideo from './IntroVideo';
+// import IntroVideo from './IntroVideo';
 import * as styles from './index.less';
 
 class Home extends React.Component {
